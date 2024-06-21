@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Sample E-commerce Website | Michelle Vuelta </title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+<body>
+    <div class="top-bar">
+        <div class="top-bar-left">
+            <select class="dropdown">
+                <option value="english">English</option>
+                <option value="spanish">Spanish</option>
+                <option value="french">French</option>
+            </select>
+            <select class="dropdown">
+                <option value="usd">USD</option>
+                <option value="eur">EUR</option>
+                <option value="gbp">GBP</option>
+                <option value="php">PHP</option>
+            </select>
+        </div>
+        <div class="top-bar-center">
+            FREE SHIPPING THIS WEEK ORDER OVER - $50
+        </div>
+        <div class="top-bar-right">
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+
+    <header>
+        <div class="container">
+            <img src="Shopink.png" alt="Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> HOME</a></li>
+                    <li class="dropdown">
+                        <a href="#"><i class="fas fa-th-large"></i> CATEGORIES</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">MEN'S</a></li>
+                            <li><a href="#">WOMEN'S</a></li>
+                            <li><a href="#">JEWELRY</a></li>
+                            <li><a href="#">PERFUME</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#"><i class="fas fa-male"></i> MEN'S</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Formal</a></li>
+                            <li><a href="#">Casual</a></li>
+                            <li><a href="#">Sports</a></li>
+                            <li><a href="#">Jacket</a></li>
+                            <li><a href="#">Sunglasses</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#"><i class="fas fa-female"></i> WOMEN'S</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Formal</a></li>
+                            <li><a href="#">Casual</a></li>
+                            <li><a href="#">Perfume</a></li>
+                            <li><a href="#">Cosmetics</a></li>
+                            <li><a href="#">Bags</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#"><i class="fas fa-gem"></i> JEWELRY</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Necklaces</a></li>
+                            <li><a href="#">Rings</a></li>
+                            <li><a href="#">Earrings</a></li>
+                            <li><a href="#">Bracelets</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#"><i class="fas fa-wine-bottle"></i> PERFUME</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Men's Perfume</a></li>
+                            <li><a href="#">Women's Perfume</a></li>
+                            <li><a href="#">Unisex Perfume</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#"><i class="fas fa-fire"></i> HOT OFFERS</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Discounts</a></li>
+                            <li><a href="#">Clearance</a></li>
+                            <li><a href="#">Sales</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="search-container">
+        <input type="text" id="searchBar" placeholder="Search...">
+        <button onclick="search()">Search</button>
+        <ul>
+            <li><a href="#"><i class="fas fa-shopping-cart"></i> Cart</a></li>
+            <li><a href="#"><i class="fas fa-credit-card"></i> Checkout</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <section class="shop-header">
+            <h1>Shop Our Products</h1>
+            <p>Browse our collection of the finest products.</p>
+        </section>
+
+        <section class="filter-section">
+            <h2>Filters</h2>
+            <div class="filters">
+                <select>
+                    <option value="">Category</option>
+                    <option value="men">Men</option>
+                    <option value="woman">Woman</option>
+                    <option value="jewelry">Jewelry</option>
+                    <option value="perfume">Perfume</option>
+                </select>
+                <select>
+                    <option value="">Price</option>
+                    <option value="low-high">Low to High</option>
+                    <option value="high-low">High to Low</option>
+                </select>
+            </div>
+        </section>
+
+        <div class="container">
+            <aside class="sidebar">
+                <h2>Category</h2>
+                <ul class="category-list">
+                    <li><a href="#">Clothes <span class="plus-icon">+</span></a></li>
+                    <li><a href="#">Footwear <span class="plus-icon">+</span></a></li>
+                    <li><a href="#">Jewelry <span class="plus-icon">+</span></a></li>
+                    <li><a href="#">Perfume <span class="plus-icon">+</span></a></li>
+                    <li><a href="#">Cosmetics <span class="plus-icon">+</span></a></li>
+                    <li><a href="#">Glasses <span class="plus-icon">+</span></a></li>
+                    <li><a href="#">Bags <span class="plus-icon">+</span></a></li>
+                </ul>
+        
+    
+        <h2>Best Sellers</h2>
+        <ul class="best-sellers">
+            <li class="product">
+                <span class="tag">15%</span>
+                <img src="Sport Set.jpg" alt="Sport Set">
+                <h4>Two Piece Short Sleeve Quick-Drying</h4>
+                <p>Men's Sport</p>
+                <div class="rating">★★★★★</div>
+                <div class="price">$25.00 <span class="old-price">$35.00</span></div>
+                <a href="#" class="ShopBttn shared-style">Add to cart</a>
+            </li>
+        
+            <li class="product">
+                <span class="tag">15%</span>
+                <img src="Italy.png" alt="Sport Set">
+                <h4>ITALY Baseball Cap</h4>
+                <p>Men's Cap</p>
+                <div class="rating">★★★★★</div>
+                <div class="price">$12.00 <span class="old-price">$18.00</span></div>
+                <a href="#" class="ShopBttn shared-style">Add to cart</a>
+            </li>
+        
+            <li class="product">
+                <span class="tag">15%</span>
+                <img src="Supreme.png" alt="Sport Set">
+                <h4>Supreme Leather Duffle Bag</h4>
+                <p>Men's Sports Bag</p>
+                <div class="rating">★★★★★</div>
+                <div class="price">$55.00 <span class="old-price">$80.00</span></div>
+                <a href="#" class="ShopBttn shared-style">Add to cart</a>
+            </li>
+        
+            <li class="product">
+                <span class="tag">15%</span>
+                <img src="Brush.png" alt="Sport Set">
+                <h4>14pcs Premium Makeup Brush Sets</h4>
+                <p>Beauty Tools</p>
+                <div class="rating">★★★★★</div>
+                <div class="price">$20.00 <span class="old-price">$30.00</span></div>
+                <a href="#" class="ShopBttn shared-style">Add to cart</a>
+            </li>
+        
+            <li class="product">
+                <span class="tag">15%</span>
+                <img src="AJacket.jpg" alt="Sport Set">
+                <h4>Varsity Jacket (A-Z)</h4>
+                <p>Jacket</p>
+                <div class="rating">★★★★★</div>
+                <div class="price">$40.00 <span class="old-price">$60.00</span></div>
+                <a href="#" class="ShopBttn shared-style">Add to cart</a>
+            </li>
+        
+            <li class="product">
+                <span class="tag">15%</span>
+                <img src="Sleepwear.jpg" alt="Sport Set">
+                <h4>6pcs Silk Lace Pajama Set</h4>
+                <p>Sleepwear</p>
+                <div class="rating">★★★★★</div>
+                <div class="price">$35.00 <span class="old-price">$50.00</span></div>
+                <a href="#" class="ShopBttn shared-style">Add to cart</a>
+            </li>
+        
+            <li class="product">
+                <span class="tag">15%</span>
+                <img src="Underwear.jpg" alt="Sport Set">
+                <h4>5pcs Plain Simple Panty</h4>
+                <p>Women's Underwear</p>
+                <div class="rating">★★★★★</div>
+                <div class="price">$15.00 <span class="old-price">$25.00</span></div>
+                <a href="#" class="ShopBttn shared-style">Add to cart</a>
+            </li>
+        </ul>
+</aside>
+
+
+<main class="content">
+    <section class="product-section">
+        <h2>New Arrivals</h2>
+        <div class="product-list">
+
+            <div class="product-card">
+                <span class="tag">15%</span>
+                <img src="Men's Floral Terno.jpg" alt="New Arrival 1">
+                <h4>Men's Floral Terno</h4>
+                <p>Men's Fashion</p>
+                <div class="rating">★★★★☆</div>
+                <div class="price">$30.00 <span class="old-price">$45.00</span></div>
+                <a href="#" class="ShopBttn shared-style">
+                    <i class="fas fa-shopping-cart"></i> Add to cart
+                </a>
+            </div>
+
+            <div class="product-card">
+                <span class="tag">15%</span>
+                <img src="Halterneck.jpg" alt="New Arrival 2">
+                <h4>Halterneck Long Dress</h4>
+                <p>Women's Fashion</p>
+                <div class="rating">★★★★★</div>
+                <div class="price">$28.00 <span class="old-price">$42.00</span></div>
+                <a href="#" class="ShopBttn shared-style">
+                    <i class="fas fa-shopping-cart"></i> Add to cart
+                </a>
+            </div>
+
+            <div class="product-card">
+                <span class="tag">15%</span>
+                <img src="California Terno.jpg" alt="New Arrival 3">
+                <h4>California Terno</h4>
+                <p>Women's Fashion</p>
+                <div class="rating">★★★★☆</div>
+                <div class="price">$32.00 <span class="old-price">$48.00</span></div>
+                <a href="#" class="ShopBttn shared-style">
+                    <i class="fas fa-shopping-cart"></i> Add to cart
+                </a>
+            </div>
+
+            <div class="product-card">
+                <span class="tag">15%</span>
+                <img src="Nke.png" alt="New Arrival 2">
+                <h4>Dunk Low Wear-Resistant</h4>
+                <p>Women's Sneaker</p>
+                <div class="rating">★★★★★</div>
+                <div class="price">$60.00 <span class="old-price">$85.00</span></div>
+                <a href="#" class="ShopBttn shared-style">
+                    <i class="fas fa-shopping-cart"></i> Add to cart
+                </a>
+            </div>
+
+            <div class="product-card">
+                <span class="tag">15%</span>
+                <img src="Half-zipper.png" alt="New Arrival 3">
+                <h4>Corelite Men Set</h4>
+                <p>Men's Sport</p>
+                <div class="rating">★★★★★</div>
+                <div class="price">$35.00 <span class="old-price">$50.00</span></div>
+                <a href="#" class="ShopBttn shared-style">
+                    <i class="fas fa-shopping-cart"></i> Add to cart
+                </a>
+            </div>
+
+            <div class="product-card">
+                <span class="tag">15%</span>
+                <img src="Yoga.png" alt="New Arrival 1">
+                <h4>Yoga Sxy Cut Out Back</h4>
+                <p>Women's Sport</p>
+                <div class="rating">★★★★☆</div>
+                <div class="price">$22.00 <span class="old-price">$35.00</span></div>
+                <a href="#" class="ShopBttn shared-style">
+                    <i class="fas fa-shopping-cart"></i> Add to cart
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="product-section">
+        <h2>Trending</h2>
+        <div class="product-list">
+            <div class="product-card">
+                <span class="tag">15%</span>
+                <img src="Slit.jpg" alt="Trending 1">
+                <h4>High Slit Party Dress</h4>
+                <p>Party Dress</p>
+                <div class="rating">★★★★☆</div>
+                <div class="price">$25.00 <span class="old-price">$40.00</span></div>
+                <a href="#" class="ShopBttn shared-style">
+                    <i class="fas fa-shopping-cart"></i> Add to cart
+                </a>
+            </div>
+            <div class="product-card">
+                <span class="tag">15%</span>
+                <img src="Lacoste.jpg" alt="Trending 2">
+                <h4>Lacoste White</h4>
+                <p>Perfume</p>
+                <div class="rating">★★★★★</div>
+                <div class="price">$35.00 <span class="old-price">$50.00</span></div>
+                <a href="#" class="ShopBttn shared-style">
+                    <i class="fas fa-shopping-cart"></i> Add to cart
+                </a>
+            </div>
+            <div class="product-card">
+                <span class="tag">15%</span>
+                <img src="Manfinity.jpg" alt="Trending 3">
+                <h4>Manfinity</h4>
+                <p>Men's Terno</p>
+                <div class="rating">★★★★☆</div>
+                <div class="price">$30.00 <span class="old-price">$45.00</span></div>
+                <a href="#" class="ShopBttn shared-style">
+                    <i class="fas fa-shopping-cart"></i> Add to cart
+                </a>
+            </div>
+        </div>               
+    </section>
+
+    <section class="product-section">
+        <h2>Top Rated</h2>
+        <div class="product-list">
+            <div class="product-card">
+                <span class="tag">15%</span>
+                <img src="4pcs.jpg" alt="Top Rated 1">
+                <h4>4pcs Round Neck Shirt</h4>
+                <p>Women's Top</p>
+                <div class="rating">★★★★★</div>
+                <div class="price">$20.00 <span class="old-price">$35.00</span></div>
+                <a href="#" class="ShopBttn shared-style">
+                    <i class="fas fa-shopping-cart"></i> Add to cart
+                </a>
+            </div>
+
+            <div class="product-card">
+                <span class="tag">15%</span>
+                <img src="Quartz.jpg" alt="Top Rated 2">
+                <h4>Quartz Leather Watch</h4>
+                <p>Men's Accessories</p>
+                <div class="rating">★★★★★</div>
+                <div class="price">$40.00 <span class="old-price">$55.00</span></div>
+                <a href="#" class="ShopBttn shared-style">
+                    <i class="fas fa-shopping-cart"></i> Add to cart
+                </a>
+            </div>
+
+            <div class="product-card">
+                <span class="tag">15%</span>
+                <img src="VS.jpg" alt="Top Rated 3">
+                <h4>VS Pure Seduction</h4>
+                <p>Perfume</p>
+                <div class="rating">★★★★★</div>
+                <div class="price">$25.00 <span class="old-price">$40.00</span></div>
+                <a href="#" class="ShopBttn shared-style">
+                    <i class="fas fa-shopping-cart"></i> Add to cart
+                </a>
+            </div>
+        </div>
+
+        <section class="product-section">
+            <h2>Black Collection</h2>
+            <div class="product-list">
+                <div class="product-card">
+                    <span class="tag">15%</span>
+                    <img src="Bsquarè.jpg" alt="Top Rated 1">
+                    <h4>Set Of Black Square</h4>
+                    <p>Jewelry</p>
+                    <div class="rating">★★★★★</div>
+                    <div class="price">$30.00 <span class="old-price">$45.00</span></div>
+                    <a href="#" class="ShopBttn shared-style">
+                        <i class="fas fa-shopping-cart"></i> Add to cart
+                    </a>
+                </div>
+        
+                <div class="product-card">
+                    <span class="tag">15%</span>
+                    <img src="BHermes.jpg" alt="Top Rated 2">
+                    <h4>Hermès</h4>
+                    <p>Women's Bag</p>
+                    <div class="rating">★★★★★</div>
+                    <div class="price">$150.00 <span class="old-price">$200.00</span></div>
+                    <a href="#" class="ShopBttn shared-style">
+                        <i class="fas fa-shopping-cart"></i> Add to cart
+                    </a>
+                </div>
+        
+                <div class="product-card">
+                    <span class="tag">15%</span>
+                    <img src="Glamour.png" alt="Top Rated 3">
+                    <h4>Glamour Sequin</h4>
+                    <p>Party Dress</p>
+                    <div class="rating">★★★★☆</div>
+                    <div class="price">$50.00 <span class="old-price">$75.00</span></div>
+                    <a href="#" class="ShopBttn shared-style">
+                        <i class="fas fa-shopping-cart"></i> Add to cart
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+<div class="special-offers">
+    <div class="offer">
+        <div class="images">
+            <img src="Summer1.png" alt="Special Offer 1">
+            <img src="summer2.png" alt="Special Offer 2">
+            <img src="summer3.png" alt="Special Offer 3">
+        </div>
+        <h3>Summer Sale</h3>
+        <p>Get up to 50% off on selected items. Hurry, limited time offer!</p>
+        <a href="#" class="button">Shop Now</a>
+    </div>
+</div>
+
+<div class="special-offers">
+    <div class="offer">
+        <div class="images">
+            <img src="Sale1.jpg" alt="Special Offer 1">
+            <img src="Sale.png" alt="Special Offer 2">
+            <img src="Sale2.jpg" alt="Special Offer 3">
+        </div>
+        <h3>Clearance Sale</h3>
+        <p>Get up to 50% off on selected items. Hurry, limited time offer!</p>
+        <a href="#" class="button">Shop Now</a>
+    </div>
+</div>
+
+<div id="alertPopup" class="alert-popup">
+    Someone just bought earrings!
+</div>
+
+    </section> 
+    </main>
+
+    <footer class="footer">
+        <p class="copyright">
+            &copy; E-commerce Website Example | © Michelle Vuelta | All Rights Reserved 
+        </p>
+    </footer>
+
+        <script src="script.js"></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    </body>
+    </html>

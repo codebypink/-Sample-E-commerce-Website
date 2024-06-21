@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Sample E-commerce Website | Michelle Vuelta </title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+  <header>
+    <body>
+        <div class="top-bar">
+            <div class="top-bar-left">
+                <select class="dropdown">
+                    <option value="english">English</option>
+                    <option value="spanish">Spanish</option>
+                    <option value="french">French</option>
+                </select>
+    
+                <select class="dropdown">
+                    <option value="usd">USD</option>
+                    <option value="eur">EUR</option>
+                    <option value="gbp">GBP</option>
+                    <option value="php">PHP</option>
+                </select>
+            </div>
+            
+            <div class="top-bar-center">
+                FREE SHIPPING THIS WEEK ORDER OVER - $50
+            </div>
+    
+            <div class="top-bar-right">
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="container">
+            <img src="Shopink.png"Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> HOME</a></li>
+                   
+                    <li class="dropdown">
+                        <a href="#"><i class="fas fa-th-large"></i> CATEGORIES</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">MEN'S</a></li>
+                            <li><a href="#">WOMEN'S</a></li>
+                            <li><a href="#">JEWELRY</a></li>
+                            <li><a href="#">PERFUME</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#"><i class="fas fa-male"></i> MEN'S</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Formal</a></li>
+                            <li><a href="#">Casual</a></li>
+                            <li><a href="#">Sports</a></li>
+                            <li><a href="#">Jacket</a></li>
+                            <li><a href="#">Sunglasses</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                    <a href="#"><i class="fas fa-female"></i> WOMEN'S</a>
+                    <ul class="dropdown-menu">
+                            <li><a href="#">Formal</a></li>
+                            <li><a href="#">Casual</a></li>
+                            <li><a href="#">Perfume</a></li>
+                            <li><a href="#">Cosmetics</a></li>
+                            <li><a href="#">Bags</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#"><i class="fas fa-gem"></i> JEWELRY</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Necklaces</a></li>
+                            <li><a href="#">Rings</a></li>
+                            <li><a href="#">Earrings</a></li>
+                            <li><a href="#">Bracelets</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#"><i class="fas fa-wine-bottle"></i> PERFUME</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Men's Perfume</a></li>
+                            <li><a href="#">Women's Perfume</a></li>
+                            <li><a href="#">Unisex Perfume</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#"><i class="fas fa-fire"></i> HOT OFFERS</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Discounts</a></li>
+                            <li><a href="#">Clearance</a></li>
+                            <li><a href="#">Sales</a></li>
+                        </ul>
+                    </li>
+                </nav>
+            </div>
+        </header>
+
+        <div class="search-container">
+            <input type="text" id="searchBar" placeholder="Search...">
+            <button onclick="search()">Search</button>
+            
+          
+                <li><a href="#"><i class="fas fa-shopping-cart"></i> Cart</a></li>
+                <li><a href="#"><i class="fas fa-credit-card"></i> Checkout</a></li>
+                </ul>
+        </div>
+
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Discover the <br>Best Products</h1>
+                <p>Find amazing products and great deals only here!</p>
+                <a href="shop.html" class="shop-now-button">Shop Now</a>
+            </div>
+        </section>
+
+        <section class="filter-section">
+            <h2>Filters</h2>
+            <div class="filters">
+                <select>
+                    <option value="">Category</option>
+                    <option value="electronics">Electronics</option>
+                    <option value="fashion">Fashion</option>
+                    <option value="home">Home</option>
+                </select>
+                <select>
+                    <option value="">Price</option>
+                    <option value="low-high">Low to High</option>
+                    <option value="high-low">High to Low</option>
+                </select>
+            </div>
+        </section>
+
+        <section class="featured-products">
+            <h2>Featured Products</h2>
+            <div class="product-carousel">
+                <div class="product">
+                    <span class="tag">15%</span>
+                    <img src="MensMin.jpg" alt="Product 1">
+                    <h4>Men's Minimalist Style</h4>
+                    <p>Men's Shoes</p>
+                    <div class="rating">★★★★★</div>
+                    <div class="price">$35.00 <span class="old-price">$55.00</span></div><br>
+                    <a href="shop.html" class="ShopBttn shared-style shop-now-button">Shop Now</a>
+                </div>
+        
+                <div class="product">
+                    <span class="tag">15%</span>
+                    <img src="Roundneck.jpg" alt="Product 2">
+                    <h4>Men's Roundneck<br<br><br></h4>
+                    <p>Men's Fashion</p>
+                    <div class="rating">★★★★★</div>
+                    <div class="price">$25.00 <span class="old-price">$40.00</span></div><br>
+                    <a href="shop.html" class="ShopBttn shared-style shop-now-button">Shop Now</a>
+                </div>
+        
+                <div class="product">
+                    <span class="tag">15%</span>
+                    <img src="Geometric.jpg" alt="Product 3">
+                    <h4>Geometric Metal Frame Sunglasses</h4>
+                    <p>Sunglasses</p>
+                    <div class="rating">★★★★★</div>
+                    <div class="price">$15.00 <span class="old-price">$30.00</span></div>
+                    <a href="shop.html" class="ShopBttn shared-style shop-now-button">Shop Now</a>
+                </div>
+        
+                <div class="product">
+                    <span class="tag">15%</span>
+                    <img src="VestShort.png" alt="Product 4">
+                    <h4>Vest And Shorts Suit<br><br></h4>
+                    <p>Women's Fashion</p>
+                    <div class="rating">★★★★★</div>
+                    <div class="price">$30.00 <span class="old-price">$50.00</span></div>
+                    <a href="shop.html" class="ShopBttn shared-style shop-now-button">Shop Now</a>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p class="copyright">
+            &copy; E-commerce | © Michelle Vuelta | All Rights Reserved 
+        </p>
+    </footer>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
